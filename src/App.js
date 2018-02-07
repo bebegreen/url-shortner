@@ -12,10 +12,9 @@ class App extends Component {
     shortUrls: []
   }
   alphabet = "123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ";
-  base = this.alphabet.length; // base is the length of the alphabet (58 in this case)
+  base = this.alphabet.length;
 
   encode(num) {
-
     let encoded = '';
     while (num) {
       let remainder = num % this.base;
